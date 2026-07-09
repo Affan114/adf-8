@@ -1,0 +1,19 @@
+{
+	"name": "ds_customers_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "sink",
+				"fileSystem": "container"
+			}
+		},
+		"schema": {}
+	}
+}
