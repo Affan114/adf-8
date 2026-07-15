@@ -1,0 +1,46 @@
+{
+	"name": "sink_folder",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "sink1container"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"c_custkey": {
+					"type": "string"
+				},
+				"c_name": {
+					"type": "string"
+				},
+				"c_address": {
+					"type": "string"
+				},
+				"c_nationkey": {
+					"type": "string"
+				},
+				"c_phone": {
+					"type": "string"
+				},
+				"c_acctbal": {
+					"type": "string"
+				},
+				"c_mktsegment": {
+					"type": "string"
+				},
+				"c_comment": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
