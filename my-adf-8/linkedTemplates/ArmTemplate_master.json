@@ -11,9 +11,41 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_adls'"
 		},
+		"sourcedb_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'sourcedb'"
+		},
+		"targetdb_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'targetdb'"
+		},
 		"ls_adls_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlscentralindia001.dfs.core.windows.net/"
+		},
+		"sourcedb_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "affan1datasql.database.windows.net"
+		},
+		"sourcedb_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "Affan1SQLDB"
+		},
+		"sourcedb_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "affan1datasql"
+		},
+		"targetdb_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "affantargetserver.database.windows.net"
+		},
+		"targetdb_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "affantargetdb"
+		},
+		"targetdb_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "affanserveradmin"
 		},
 		"containerUri": {
 			"type": "string",
@@ -45,8 +77,32 @@
 					"ls_adls_accountKey": {
 						"value": "[parameters('ls_adls_accountKey')]"
 					},
+					"sourcedb_password": {
+						"value": "[parameters('sourcedb_password')]"
+					},
+					"targetdb_password": {
+						"value": "[parameters('targetdb_password')]"
+					},
 					"ls_adls_properties_typeProperties_url": {
 						"value": "[parameters('ls_adls_properties_typeProperties_url')]"
+					},
+					"sourcedb_properties_typeProperties_server": {
+						"value": "[parameters('sourcedb_properties_typeProperties_server')]"
+					},
+					"sourcedb_properties_typeProperties_database": {
+						"value": "[parameters('sourcedb_properties_typeProperties_database')]"
+					},
+					"sourcedb_properties_typeProperties_userName": {
+						"value": "[parameters('sourcedb_properties_typeProperties_userName')]"
+					},
+					"targetdb_properties_typeProperties_server": {
+						"value": "[parameters('targetdb_properties_typeProperties_server')]"
+					},
+					"targetdb_properties_typeProperties_database": {
+						"value": "[parameters('targetdb_properties_typeProperties_database')]"
+					},
+					"targetdb_properties_typeProperties_userName": {
+						"value": "[parameters('targetdb_properties_typeProperties_userName')]"
 					}
 				}
 			},

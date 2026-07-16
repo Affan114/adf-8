@@ -8,8 +8,32 @@
 		"ls_adls_accountKey": {
 			"value": ""
 		},
+		"sourcedb_password": {
+			"value": ""
+		},
+		"targetdb_password": {
+			"value": ""
+		},
 		"ls_adls_properties_typeProperties_url": {
 			"value": "https://adlscentralindia001.dfs.core.windows.net/"
+		},
+		"sourcedb_properties_typeProperties_server": {
+			"value": "affan1datasql.database.windows.net"
+		},
+		"sourcedb_properties_typeProperties_database": {
+			"value": "Affan1SQLDB"
+		},
+		"sourcedb_properties_typeProperties_userName": {
+			"value": "affan1datasql"
+		},
+		"targetdb_properties_typeProperties_server": {
+			"value": "affantargetserver.database.windows.net"
+		},
+		"targetdb_properties_typeProperties_database": {
+			"value": "affantargetdb"
+		},
+		"targetdb_properties_typeProperties_userName": {
+			"value": "affanserveradmin"
 		}
 	}
 }
