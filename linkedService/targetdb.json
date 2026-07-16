@@ -1,0 +1,17 @@
+{
+	"name": "targetdb",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "affantargetserver.database.windows.net",
+			"database": "affantargetdb",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "affanserveradmin",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDczNUNDNTBDLTU0QjEtNEI5Ny1CNUVBLUJCQjJBRDkwQkI4Ml8wMmZjZDY0Ny1iZGIyLTQ1NDYtYTRjZi0xYzZjZjNlMzEzMTkiDQp9"
+		}
+	}
+}
